@@ -1,6 +1,7 @@
 self.__uv$config = {
     prefix: '/service/',
-    bare: '/bare/',
+    /* Use a public bare server so it actually unblocks */
+    bare: 'https://bare.benroberts.dev', 
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/js/uv/uv.handler.js',
